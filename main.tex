@@ -1,0 +1,316 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage[T1]{fontenc}
+
+
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+
+
+\begin{document}
+\begin{titlepage}
+    \centering
+    \vspace*{5cm}
+    {\Huge \textbf{Dokumentacja Projektu Zaliczeniowego}}\\[1.5cm]
+    {\LARGE Przedmiot: Inżynieria Oprogramowania}\\[1cm]
+    {\Large Temat: \textbf{System zarządzania siłownią}}\\[1cm]
+    {\Large Autorzy: \textbf{Andrii Tynskyi, Bohdan Shcherbina}}\\[1cm]
+    {\Large Grupa: I5-220B}\\[1cm]
+    {\Large Kierunek: Informatyka}\\[1cm]
+    {\Large Rok akademicki: 2}\\[1cm]
+    {\Large Poziom i semestr: I/4}\\[1cm]
+    {\Large Tryb studiów: Stacjonarne}\\[1cm]
+    \vfill
+    {\large \today}
+\end{titlepage}
+
+% Należy pozostawić wszelkie nagłówki tego dokumentu, a umieszczać treść w odpowiednich miejscach zamiast obecnych objaśnień.
+% Stronę tytułową można sformatować w dowolny sposób, ale należy pozostawić zawartość informacyjną w układzie pokazanym powyżej.
+% Praca powinna zostać złożona wyłącznie w formacie pdf. Przed wygenerowaniem ostatecznej wersji należy zaktualizować spis treści – wyświetlane dwa poziomy.
+% Niniejszą informację należy również usunąć z wersji końcowej.
+
+
+\renewcommand{\contentsname}{Spis treści}
+\tableofcontents
+\newpage
+
+
+\section{Odnośniki do innych źródeł}
+tj. do wykorzystywanych narzędzi / projektów w tych narzędziach:
+
+\begin{itemize}
+    \item Zarządzania projektem – Jira, Trello, itp.
+    \item Wersjonowanie kodu – sugerowany Git (hosting np. na Bitbucket lub Github), ew. SVN
+    \item System obsługi defektów – np. Bitbucket, Github, Bugzilla.
+\end{itemize}
+
+\newpage
+
+\section{Słownik pojęć}
+Tabela lub lista z pojęciami, które wymagają wyjaśnienia, wraz z tymi wyjaśnieniami – w szczególności synonimy różnych pojęć używanych w dokumentacji.
+
+
+\newpage
+
+\section{Wprowadzenie}
+\subsection{Cel dokumentacji}
+System zarządzania siłownią to praktyczny projekt, który łączy wiele funkcjonalności, takich jak rejestracja członków, planowanie treningów i monitorowanie postępów, co pozwala na realne zastosowanie w biznesie. Branża fitness dynamicznie się rozwija, a cyfryzacja usług, takich jak rezerwacje zajęć grupowych czy płatności online, staje się coraz bardziej powszechna, co czyni ten projekt aktualnym i przyszłościowym. Temat siłowni jest interesujący, ponieważ obejmuje zarówno aspekty techniczne, jak i użytkowe, a system może być rozwijany o dodatkowe funkcje, takie jak integracja z aplikacjami mobilnymi czy analiza wyników treningowych.
+
+\subsection{Przeznaczenie dokumentacji}
+Dla kogo jest przeznaczona dokumentacja.
+
+\subsection{Opis organizacji lub analiza rynku}
+Jedna z dwóch opcji:
+
+\begin{enumerate}
+    \item Jeśli dla konkretnej organizacji: Czym jest organizacja, dla której realizowany będzie system; jak działa (lub będzie działała), kiedy system będzie wdrożony – tutaj nie odwołujemy się do samego systemu, tylko opisujemy samo działanie organizacji i role. W szczególności – jak wyglądają główne procesy biznesowe.
+    \item Jeśli na masowy rynek: Pobieżna analiza rynku. Dla kogo będzie przydatny taki system. Ile jest organizacji, które będą mogły z niego skorzystać, użytkowników w poszczególnych organizacjach. Czy te organizacje stanowią jednorodną grupę czy są różne rodzaje. Co one mają ze sobą wspólnego. Jak ta liczba będzie się zmieniała w najbliższej przyszłości.
+\end{enumerate}
+
+
+\subsection{Analiza SWOT organizacji}
+Tabela przedstawiająca mocne i słabe strony oraz szanse i zagrożenia.
+
+\begin{itemize}
+    \item jeśli system dla konkretnej organizacji:
+    \begin{itemize}
+        \item wystarczy sama tabela 2x2 (silne-słabe-szanse-zagrożenia)
+    \end{itemize}
+    \item jeśli system na masowy rynek:
+    \begin{itemize}
+        \item szanse i zagrożenia
+    \end{itemize}
+\end{itemize}
+
+\newpage
+
+\section{Specyfikacja wymagań}
+\subsection{Charakterystyka ogólna}
+Opis systemu i jego podstawowych założeń.
+\subsubsection{Definicja produktu}
+Jedno zdanie o systemie – nazwa i rodzaj.
+
+\subsubsection{Podstawowe założenia}
+Do czego będzie służył ten system? – Kilka/kilkanaście zdań wprowadzających.
+
+\subsubsection{Cel biznesowy}
+Co organizacja docelowa chce osiągnąć wdrażając system?
+
+\subsubsection{Użytkownicy}
+
+Lista – ew. wyjaśnienia dodać do słownika pojęć.
+
+\subsubsection{Korzyści z systemu}
+Dla poszczególnych grup użytkowników – każdy element z unikalnym numerem identyfikacyjnym.
+
+\subsubsection{Ograniczenia projektowe i wdrożeniowe}
+
+Przepisy prawne, specyficzne technologie, narzędzia, b.d., protokoły komunikacyjne, aspekty zabezpieczeń, zgodność ze standardami, powiązania z innymi aplikacjami, platforma sprzętowa, system operacyjny, inne komponenty niezbędne do współpracy – wszystko wraz z uzasadnieniem!
+
+
+\subsection{Wymagania funkcjonalne}
+
+
+\subsubsection{Lista wymagań}
+
+Lista numerowana – czyli lista przypadków użycia lub bardziej ogólnie sformułowane wymagania, np. wymagania użytkownika.
+
+\subsubsection{Diagramy przypadków użycia}
+Tutaj same diagramy – bez specyfikacji, ale każdy diagram z tytułem i na osobnej stronie.
+
+\subsubsection{Szczegółowy opis wymagań}
+
+Dla 5-7 wybranych najważniejszych przypadków użycia – przypadku zespołów 3-osobowych i większych, proporcjonalnie więcej
+każde na nowej stronie wg następujących punktów:
+
+\begin{itemize}
+    \item Numer – jako ID
+    \item Nazwa
+    \item Uzasadnienie biznesowe – odwołanie (-a) do elementów wymienionych w 4.1.5. (id i treść elementu, do którego się odwołujemy)
+    \item Użytkownicy
+    \item Scenariusze, dla każdego z nich:
+    \begin{itemize}
+        \item Nazwa scenariusza
+        \item Warunki początkowe
+        \item Przebieg działań – numerowana lista kroków, ze wskazaniem, kto realizuje dany krok
+        \item Efekty – warunki końcowe
+        \item Wymagania niefunkcjonalne – szczegółowe wobec poszczególnych wymagań funkcjonalnych
+        \item Częstotliwość - na skali 1-5 lub BN-BW
+        \item Istotność – inaczej: zależność krytyczna, znaczenie - na skali 1-5 lub BN-BW
+    \end{itemize}
+\end{itemize}
+
+\textbf{Ważne!}
+
+Elementy od warunków początkowych do końca mogą być grupowane, tj. specyfikacja pojedynczego przypadku użycia może zawierać:
+- pojedynczy przebieg działań (scenariusz główny) oraz ew. scenariusze alternatywne, albo
+- wiele przebiegów głównych wraz z ew. scenariuszami alternatywnymi – wtedy każdy z przebiegów głównych powinien być opisany wg tych punktów (od warunków początkowych do końca).
+
+
+\subsection{Wymagania niefunkcjonalne}
+W odniesieniu do całego systemu, modułów lub innych składowych systemu:
+\begin{enumerate}
+    \item Wydajność – w odniesieniu do konkretnych sytuacji – funkcji systemu
+    \item Bezpieczeństwo – utrata, zniszczenie danych, zniszczenie innego systemu przez nasz – wraz z działaniami zapobiegawczymi i ograniczającymi skutki
+    \item Zabezpieczenia
+    \item Inne cechy jakości – najlepiej ilościowo, żeby można było zweryfikować (zmierzyć) – adaptowalność, dostępność, poprawność, elastyczność, łatwość konserwacji, przenośność, awaryjność, testowalność, użyteczność
+\end{enumerate}
+
+\newpage
+
+\section{Zarządzanie projektem}
+\subsection{Zasoby ludzkie}
+(rzeczywiste lub hipotetyczne) – przy realizacji projektu
+Należy założyć, że projekt byłby realizowany w całości jako projekt komercyjny a nie tylko częściowo w ramach zajęć na uczelni
+
+
+\subsection{Harmonogram prac}
+Etapy mogą się składać z zadań.
+Wskazać czasy trwania poszczególnych etapów i zadań – wykres Gantta.
+obejmuje również harmonogram wdrożenia projektu – np. szkolenie, rozruch, konfiguracja, serwis – może obejmować różne wydania (tj. o różnej funkcjonalności – personal, professional, enterprise) i wersje (1.0, 1.5, itd.)
+
+\subsection{Etapy/kamienie milowe projektu}
+
+Dla głównych etapów projektu.
+
+
+Cały ten rozdział jest opcjonalny – dla chętnych. Nie jest omawiany na wykładzie!
+Studenci powinni skonsultować szczegółowe wymagania w tym zakresie z nauczycielem prowadzącym zajęcia w danej grupie.
+
+\newpage
+
+\section{Zarządzanie ryzykiem}
+\subsection{Lista czynników ryzyka}
+Wypełniona lista kontrolna.
+
+\subsection{Ocena ryzyka}
+Prawdopodobieństwo i wpływ
+
+\subsection{Plan reakcji na ryzyko}
+Działania w odniesieniu do poszczególnych ryzyk.
+Mogą być wg różnych strategii, tj. kilka strategii dla pojedynczego czynnika ryzyka 
+
+
+Rozdział obowiązkowy w zespołach co najmniej 3-osobowych, w mniejszych – do uzgodnienia z prowadzącym zajęcia.
+
+\newpage
+
+\section{Zarządzanie jakością}
+\subsection{Scenariusze i przypadki testowe}
+
+Głównie testowanie funkcjonalności, ale może być też testowanie wymagań niefunkcjonalnych/zgodności; każdy scenariusz od nowej strony, musi zawierać co najmniej następujące informacje (sugerowany układ tabelaryczny, np. wg szablonu podanego w osobnym pliku lub na wykładzie):
+
+\begin{itemize}
+    \item numer – jako ID
+    \item nazwa scenariusza – co test w nim testowane (max kilka wyrazów),
+    \item kategoria – poziom/kategoria testów,
+    \item opis – dodatkowe opcjonalne informacje, które nie zmieściły się w nazwie,
+    \item tester - konkretna osoba lub klient/pracownik,
+    \item termin – kiedy testowanie ma być przeprowadzane,
+    \item narzędzia wspomagające – jeśli jakieś są używane przy danym scenariuszu,
+    \item przebieg działań – tabela z trzema kolumnami: lp. oraz opisującymi działania testera i systemu,
+    \item założenia, środowisko, warunki wstępne, dane wejściowe – przygotowanie przed uruchomieniem testów,
+    \item zestaw danych testowych – najlepiej w formie tabelarycznej – jakie konkretnie dane mają być użyte przez testera i zwrócone przez system w poszczególnych krokach przebiegu działań
+    \item \textit{przebieg lub zestaw danych testowych musi zawierać jawną informację o warunku zaliczenia testu}
+\end{itemize}
+
+
+
+\newpage
+
+\section{Projekt techniczny}
+\subsection{Opis architektury systemu}
+Z ew. rysunkami pomocniczymi
+
+\subsection{Technologie implementacji systemu}
+
+Tabela z listą wykorzystanych technologii, każda z uzasadnieniem.
+
+\subsection{Diagramy UML}
+
+każdy diagram ma mieć tytuł oraz ma być na osobnej stronie
+diagramy przypadków użycia umieszczone w punkcie 4.2.2, a nie tutaj.
+
+\subsubsection{Diagram(-y) klas}
+1 lub więcej
+
+\subsubsection{Diagram(-y) czynności}
+Co najmniej 1 dla zespołów 2-osobowych, więcej dla liczniejszych
+
+\subsubsection{Diagramy sekwencji}
+Co najmniej 5, w tym co najmniej 1 przypadek użycia zilustrowany kilkoma diagramami (dla zespołów 2-osobowych, dla liczniejszych więcej)
+
+\subsubsection{Inne diagramy}
+Co najmniej trzy – komponentów, rozmieszczenia, maszyny stanowej itp.
+
+\subsection{Charakterystyka zastosowanych wzorców projektowych}
+
+informacja opisowa wspomagana diagramami (odsyłaczami do diagramów UML); jeśli wykorzystano wzorce projektowe, to należy wykazać dwa z nich
+uwaga – wzorce projektowe nie są omawiane na wykładach!
+
+\subsection{Projekt bazy danych}
+
+\subsubsection{Schemat}
+w trzeciej formie normalnej; jeśli w innej to umieć uzasadnić wybór
+
+\subsubsection{Projekty szczegółowe tabel}
+w zależności, czy następujące elementy są widoczne na schemacie b.d.: nazwa tabeli, nazwy pól, typ danych, wartości NULL, klucz główny, klucz obcy –
+- jeśli TAK: i nie ma potrzeby pokazania dodatkowych elementów b.d., to ten punkt może być pusty,
+- jeśli NIE: to podać te elementy, których nie widać na schemacie.
+dodatkowymi elementami mogą być np. triggery, procedury, funkcje, indeksy, użytkownicy, role. 
+
+\subsection{Projekt interfejsu użytkownika}
+Co najmniej dla głównej funkcjonalności programu – w razie wątpliwości, uzgodnić z prowadzącym zajęcia.
+
+\subsubsection{Lista głównych elementów interfejsu}
+
+Okien, stron, aktywności (Android)
+
+\subsubsection{Przejścia między głównymi elementami}
+
+Np. storyboard, schemat blokowy lub inna notacja
+
+\subsubsection{Projekty szczegółowe poszczególnych elementów}
+dla 5-7 głównych elementów (w zespołach 2-osobowych)
+każdy element od nowej strony z następującą minimalną zawartością:
+
+\begin{itemize}
+    \item numer – ID elementu
+    \item nazwa – np. formularz danych produktu
+    \item projekt graficzny – wystarczy schemat w narzędziu graficznym lub zrzut ekranu – z przykładowymi danymi (nie pusty!!!)
+    \item opcjonalnie:
+    \item opis – dodatkowe opcjonalne informacje o przeznaczeniu, obsłudze – jeśli nazwa nie będzie wystarczająco czytelna
+    \item wykorzystane dane – jakie dane z bazy danych są wykorzystywane
+    \item opis działania – tabela pokazująca m.in. co się dzieje po kliknięciu przycisku, wybraniu opcji z menu itp.
+\end{itemize}
+
+\subsection{Procedura wdrożenia}
+Jeśli informacje w harmonogramie nie są wystarczające (a zapewne nie są)
+
+\newpage
+
+\section{Dokumentacja dla użytkownika}
+Opcjonalnie – dla chętnych
+Na podstawie projektu docelowej aplikacji, a nie zaimplementowanego prototypu architektury
+
+4-6 stron z obrazkami (np. zrzuty ekranowe, polecenia do wpisania na konsoli, itp.)
+\begin{itemize}
+    \item pisana językiem odpowiednim do grupy odbiorców – czyli najczęściej nie do informatyków
+    \item może to być przebieg krok po kroku obsługi jednej głównej funkcji systemu, kilku mniejszych, instrukcja instalacji lub innej pomocniczej czynności.
+\end{itemize}
+
+\newpage
+
+\section{Podsumowanie}
+\subsection{Szczegółowe nakłady projektowe członków zespołu}
+Tabela (kolumny to osoby, wiersze to działania) pokazująca, kto ile czasu poświęcił na projekt oraz procentowy udział każdej osoby w danym zadaniu oraz wiersz podsumowania – procentowy udział każdej osoby w skali całego projektu
+
+\newpage
+\section{Inne informacje}
+Przydatne informacje, które nie zostały ujęte we wcześniejszych punktach
+
+\end{document}
